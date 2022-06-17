@@ -51,6 +51,7 @@ function ShoppingList({ cart, updateCart }) {
 					) : null
 				)}
 			</ul>
+
 		</div>
 	)
 }
