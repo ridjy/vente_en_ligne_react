@@ -1,4 +1,5 @@
 import '../styles/Cart.css'
+/*import { useState } from 'react'*/
 
 function Cart() {
     const monsteraPrice = 8
