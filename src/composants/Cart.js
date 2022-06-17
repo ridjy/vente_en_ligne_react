@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/Cart.css'
 
 function Cart({ cart, updateCart }) 
@@ -27,7 +27,12 @@ function Cart({ cart, updateCart })
     <div>Votre panier est vide</div>
   );
 
-  //
+  //seulement si total change (en 2e param)
+  useEffect(() => {
+    document.title = `LMJ: ${total}€ d'achats`
+  }, [total])
+  //si tableau vide, exécution uniquement au 1er render
+
 	return isOpen ? (
 		<div className='lmj-cart'>
 			<button
