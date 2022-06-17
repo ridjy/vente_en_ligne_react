@@ -8,7 +8,6 @@ function ShoppingList() {
 			acc.includes(plant.category) ? acc : acc.concat(plant.category),
 		[]
 	)
-/*js reduce */ 
 
 	return (
 		<div>
